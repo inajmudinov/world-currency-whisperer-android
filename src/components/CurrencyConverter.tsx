@@ -28,12 +28,14 @@ const currencies = [
   { code: 'RUB', name: 'Russian Ruble', symbol: '₽', flag: '🇷🇺' },
   { code: 'TRY', name: 'Turkish Lira', symbol: '₺', flag: '🇹🇷' },
   { code: 'AED', name: 'UAE Dirham', symbol: 'د.إ', flag: '🇦🇪' },
+  { code: 'TJS', name: 'Tajikistani Somoni', symbol: 'сом', flag: '🇹🇯' },
 ];
 
 // Mock exchange rates (in a real app, you'd fetch these from an API)
 const mockRates: Record<string, Record<string, number>> = {
-  USD: { EUR: 0.85, GBP: 0.73, JPY: 110, CAD: 1.25, AUD: 1.35, CHF: 0.92, CNY: 6.45, INR: 74.5, KRW: 1180, BRL: 5.2, MXN: 20.1, SGD: 1.35, NZD: 1.42, ZAR: 14.8, SEK: 8.6, NOK: 8.9, RUB: 74, TRY: 8.4, AED: 3.67 },
-  EUR: { USD: 1.18, GBP: 0.86, JPY: 129, CAD: 1.47, AUD: 1.59, CHF: 1.08, CNY: 7.6, INR: 87.8, KRW: 1391, BRL: 6.13, MXN: 23.7, SGD: 1.59, NZD: 1.67, ZAR: 17.4, SEK: 10.1, NOK: 10.5, RUB: 87.2, TRY: 9.9, AED: 4.33 },
+  USD: { EUR: 0.85, GBP: 0.73, JPY: 110, CAD: 1.25, AUD: 1.35, CHF: 0.92, CNY: 6.45, INR: 74.5, KRW: 1180, BRL: 5.2, MXN: 20.1, SGD: 1.35, NZD: 1.42, ZAR: 14.8, SEK: 8.6, NOK: 8.9, RUB: 74, TRY: 8.4, AED: 3.67, TJS: 10.9 },
+  EUR: { USD: 1.18, GBP: 0.86, JPY: 129, CAD: 1.47, AUD: 1.59, CHF: 1.08, CNY: 7.6, INR: 87.8, KRW: 1391, BRL: 6.13, MXN: 23.7, SGD: 1.59, NZD: 1.67, ZAR: 17.4, SEK: 10.1, NOK: 10.5, RUB: 87.2, TRY: 9.9, AED: 4.33, TJS: 12.8 },
+  TJS: { USD: 0.092, EUR: 0.078, GBP: 0.067, JPY: 10.1, CAD: 0.115, AUD: 0.124, CHF: 0.085, CNY: 0.59, INR: 6.84, KRW: 108.3, BRL: 0.48, MXN: 1.85, SGD: 0.124, NZD: 0.131, ZAR: 1.36, SEK: 0.79, NOK: 0.82, RUB: 6.79, TRY: 0.77, AED: 0.34 },
   // Add more base currencies as needed
 };
 
